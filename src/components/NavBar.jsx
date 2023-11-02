@@ -51,10 +51,10 @@ const NavBar = ( {count}) => {
           
 
           <Link
-            to="/contact"
+            to="/booking"
             className="p-4 transition-colors hover:text-blue-500 hover:scale-105 transf ease-in-out duration-500 transform hover:underline hover:font-medium hover:text-xl"
           >
-            Contact
+            Booking
           </Link>
         </ul>
 
@@ -107,10 +107,10 @@ const NavBar = ( {count}) => {
 
 
               <Link
-                to="/contact"
+                to="/booking"
                 className="p-4 hover:scale-105 transition-all ease-in-out duration-500 "
               >
-                Contact
+                Booking
               </Link>
             </div>
           </ul>

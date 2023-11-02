@@ -40,9 +40,17 @@ const MerchList = ({merchClick}) => {
     })
     return (
         <div className="  bg-black h-full pb-8 ">
-
+           
             <div className=" flex flex-wrap gap-20 items-center justify-center mt-32 ">
             {renderMerch}
+            </div>
+            <div className="flex flex-col items-center justify-center  space-y-7 mt-32">
+                <h1 className="text-white text-4xl font-bold ml-12 lg:ml-0 lg:text-2xl flex flex-wrap ">
+                    SKII MASK
+                </h1>
+                <h1 className="text-white text-4xl font-bold ml-12 lg:ml-0 lg:text-2xl flex flex-wrap ">
+                    COMING SOON
+                </h1>
             </div>
             <div className='  flex flex-col items-center justify-center space-y-7 pt-16'> 
                <h1 className=' text-white font-bold ml-12 lg:ml-0 lg:text-2xl flex flex-wrap  '>
