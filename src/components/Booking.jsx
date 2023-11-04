@@ -7,8 +7,8 @@ import { BsSpotify } from "react-icons/bs";
 
 const Booking = () => {
   return (
-    <div className="container">
-      <img src={boyz} alt="image"></img>
+    <div className="contain">
+      <img className=" lg:h-[650px] lg:w-[900px] rounded-2xl h-96" src={boyz} alt="image"></img>
       <div className="li">
         <a href="mailto:abcs@gmail.com">Book Now</a>
       </div>

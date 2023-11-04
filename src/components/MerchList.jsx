@@ -41,26 +41,29 @@ const MerchList = ({merchClick}) => {
     return (
         <div className="  bg-black h-full pb-8 ">
            
-            <div className=" flex flex-wrap gap-20 items-center justify-center mt-32 ">
+            <div className=" flex flex-wrap gap-20 items-center justify-center mt-32 lg:p-0 p-5 ">
             {renderMerch}
             </div>
             <div className="flex flex-col items-center justify-center  space-y-7 mt-32">
-                <h1 className="text-white text-4xl font-bold ml-12 lg:ml-0 lg:text-2xl flex flex-wrap ">
+                <h1 className="text-white text-2xl font-bold ml-12 lg:ml-0 lg:text-4xl flex flex-wrap ">
                     SKII MASK
                 </h1>
-                <h1 className="text-white text-4xl font-bold ml-12 lg:ml-0 lg:text-2xl flex flex-wrap ">
+                <h1 className="text-white lg:text-4xl font-bold ml-12 lg:ml-0 text-2xl flex flex-wrap ">
                     COMING SOON
                 </h1>
             </div>
-            <div className='  flex flex-col items-center justify-center space-y-7 pt-16'> 
-               <h1 className=' text-white font-bold ml-12 lg:ml-0 lg:text-2xl flex flex-wrap  '>
-               SIGN UP TO GET FIRST ACCESS TO THE COLLECTION & FUTURE BURUKLYN BOYZ UPDATES
-               </h1>
-              <input className=' bg-black border-b-2 border-blue-600 lg:text-3xl flex items-center justify-center text-white ' placeholder=' Email' />
-              <button className=' lg:text-2xl border-4 border-blue-600 p-3 text-blue-600'>
-                SUBSCRIBE
-              </button>
-            </div>           
+            <div className='  flex flex-col items-center justify-center space-y-7 mt-7'>
+                <h1 className=' text-white font-bold ml-12 lg:ml-0 lg:text-2xl flex flex-wrap  '>
+                    SIGN UP TO GET FIRST ACCESS TO THE COLLECTION & FUTURE BURUKLYN BOYZ UPDATES
+                </h1>
+<input
+  className='bg-black border-b-2 border-blue-600 lg:text-3xl flex items-center justify-center text-white text-center'
+  placeholder='Email'
+/>
+                <button className=' lg:text-2xl text-xl border-2 lg:border-4 border-blue-600 p-3 text-blue-600'>
+                    SUBSCRIBE
+                </button>
+            </div>      
 
         </div>
     );

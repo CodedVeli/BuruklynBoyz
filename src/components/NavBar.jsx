@@ -29,7 +29,7 @@ const NavBar = ( {count}) => {
         <ul style={{ color: "white" }} className="hidden  sm:flex ">
         <Link
   to="/"
-  className="p-4 transition-colors hover:text-blue-500 hover:scale-105 transf ease-in-out duration-500 transform hover:underline hover:font-medium hover:text-xl"
+  className="p-4 text-2xl font-bold transition-colors hover:text-blue-500 hover:scale-105 transf ease-in-out duration-500 transform hover:underline hover:font-medium hover:text-xl"
 >
   Home
 </Link>
@@ -37,13 +37,13 @@ const NavBar = ( {count}) => {
 
           <Link
            to="/merch"
-            className="p-4 transition-colors hover:text-blue-500 hover:scale-105 transf ease-in-out duration-500 transform hover:underline hover:font-medium hover:text-xl"
+            className="p-4  text-2xl font-bold transition-colors hover:text-blue-500 hover:scale-105 transf ease-in-out duration-500 transform hover:underline hover:font-medium hover:text-xl"
           >
             Merch
           </Link>
           <Link
             to="/events"
-            className="p-4 transition-colors hover:text-blue-500 hover:scale-105 transf ease-in-out duration-500 transform hover:underline hover:font-medium hover:text-xl"
+            className="p-4  text-2xl font-bold transition-colors hover:text-blue-500 hover:scale-105 transf ease-in-out duration-500 transform hover:underline hover:font-medium hover:text-xl"
           >
             Events
           </Link>
@@ -52,7 +52,7 @@ const NavBar = ( {count}) => {
 
           <Link
             to="/booking"
-            className="p-4 transition-colors hover:text-blue-500 hover:scale-105 transf ease-in-out duration-500 transform hover:underline hover:font-medium hover:text-xl"
+            className="p-4  text-2xl font-bold transition-colors hover:text-blue-500 hover:scale-105 transf ease-in-out duration-500 transform hover:underline hover:font-medium hover:text-xl"
           >
             Booking
           </Link>
