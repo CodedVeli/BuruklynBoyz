@@ -43,7 +43,7 @@ const Video = () => {
                 backgroundPosition: "center",
                 backgroundSize: "cover"
             }}>
-                <div className=' flex flex-col items-center justify-center text-white pl-7 mt-[800px] lg:pb-0 lg:mb-0 mb-28 lg:ml-0 ml-52 space-y-3 '>
+                <div className=' flex flex-col items-center justify-center text-white pl-7 mt-[800px] lg:pb-0 lg:mb-0 mb-44 lg:ml-0 ml-52 space-y-3 '>
                     <p  >
                         LIMITED EDITION
                     </p>
