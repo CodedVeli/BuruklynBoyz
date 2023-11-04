@@ -13,7 +13,7 @@ const Booking = () => {
         <a href="mailto:abcs@gmail.com">Book Now</a>
       </div>
       <div className="contact">
-        <h1>Contact Us</h1>
+        <h1 className=" lg:text-4xl text-2xl text-blue-700 text-center">Contact Us</h1>
         <div className="icons">
           <a href="">
             <BsInstagram className="instagram" />
