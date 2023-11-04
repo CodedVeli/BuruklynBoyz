@@ -51,7 +51,7 @@ const Events = ({merchClick}) => {
             return (
                 <div key={event.id}  className="relative">
                     <img onClick={handleEvent} src={event.title} alt='event' className="w-[500px] rounded-2xl" />
-                    <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center lg:hover:bg-gradient-to-b from-black   via-transparent to-black  opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                    <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center lg:hover:bg-gradient-to-b from-black   via-transparent to-black  opacity-0 transition duration-300 ease-in-out lg:hover:opacity-100">
                 <button onClick={handleEvent}  className=" text-blue-600 border-4 border-blue-500 font-semibold p-4 text-2xl">Grab Your Ticket</button>
             </div>
                     <h1 className='text-2xl font-bold text-white'>Ksh {event.price}</h1>
