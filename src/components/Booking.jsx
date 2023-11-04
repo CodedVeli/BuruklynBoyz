@@ -15,16 +15,16 @@ const Booking = () => {
       <div className="contact">
         <h1 className=" lg:text-4xl text-2xl text-blue-700 text-center">Contact Us</h1>
         <div className="icons">
-          <a href="">
+          <a href="instagram.com">
             <BsInstagram className="instagram" />
           </a>
-          <a href="">
+          <a href="youtube.com">
             <BsYoutube className="youtube" />
           </a>
           <a href="">
             <RiTwitterXFill className="twitter" />
           </a>
-          <a href="">
+          <a href="spotify.com">
             <BsSpotify className="spotify" />
           </a>
         </div>
