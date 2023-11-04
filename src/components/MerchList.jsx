@@ -1,32 +1,75 @@
 /* eslint-disable react/prop-types */
-import { useEffect,useState } from "react";
+// import { useEffect,useState } from "react";
 // import boyz from '../assets/images/boyz.jpg'
 
 const MerchList = ({merchClick}) => {
 
-    const [merch, setMerch] = useState([])
+    // const [merch, setMerch] = useState([])
 
-    useEffect(() => {
-        const fetchData = async () => fetch(' http://localhost:3000/merch')
-                        .then( async (response) => {
-                            const resp = await response.json()
-                            setMerch(resp)
-                            console.log(resp)
+    // useEffect(() => {
+    //     const fetchData = async () => fetch(' http://localhost:3000/merch')
+    //                     .then( async (response) => {
+    //                         const resp = await response.json()
+    //                         setMerch(resp)
+    //                         console.log(resp)
 
-                            }                     
-                        )
-       fetchData()
-      }, [])
+    //                         }                     
+    //                     )
+    //    fetchData()
+    //   }, [])
+
+
+    const merchs = [
+        {
+            "id": 1,
+            "name": "Buruklynn Boyz",
+            "image_id": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWrvK1_Cve2Sdpf6545uPsQAKVcP_gjP1AQ&usqp=CAU",
+            "price": "1000"
+        },
+        {
+            "id": 2,
+            "name": "Buruklynn Boyz",
+            "image_id": "https://img.freepik.com/free-psd/mockup-black-hoodie-pack-front-back_125540-3044.jpg?size=626&ext=jpg",
+            "price": "1000"
+        },
+        {
+            "id": 3,
+            "name": "Buruklynn Boyz",
+            "image_id": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNsb3RoaW5nfGVufDB8fDB8fHww",
+            "price": "1000"
+        },
+        {
+            "id": 4,
+            "name": "Buruklynn Boyz",
+            "image_id": "https://images.unsplash.com/photo-1589902860314-e910697dea18?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": "1000"
+        },
+        {
+            "id": 5,
+            "name": "Buruklynn Boyz",
+            "image_id": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D",
+            "price": "1000"
+        },
+        {
+            "id": 6,
+            "name": "Buruklynn Boyz",
+            "image_id": "https://images.unsplash.com/photo-1571945153237-4929e783af4a?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D",
+            "price": "1000"
+        }
+        
+    ]
+    
 
         const handleMerch = () => {
             merchClick()
         }
 
-    const renderMerch = merch.map((element) => {
+    const renderMerch = merchs.map((element) => {
         return (
             <div key={element.id} className="relative">
             <img
-                className="w-[500px] rounded-2xl"
+            onClick={handleMerch}
+                className="w-[500px] rounded-2xl "
                 src={element.image_id}
                 alt={element.name}
             />

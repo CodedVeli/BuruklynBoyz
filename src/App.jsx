@@ -15,7 +15,7 @@ function App() {
       <NavBar count={count} />  
       <Routes>
         <Route path="/" element={<Video />} />
-        <Route path="/events" element={<Events />} />
+        <Route path="/events" element={<Events  merchClick={merchClick} />} />
         <Route path="/merch" element={<MerchList merchClick={merchClick}  />} />
         <Route path="/booking" element={<Booking />} />
       </Routes> 

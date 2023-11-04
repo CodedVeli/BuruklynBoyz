@@ -38,7 +38,7 @@ const Video = () => {
                 <img className=' w-[900px] h-auto rounded-2xl' src={photo1} alt='phot01' />
                 <img className=' lg:w-[900px] lg:h-[1050px] p-4 lg:p-0 rounded-2xl' src={photo2} alt='photo2' />
             </div>
-            <div className=' h-screen flex' style={{
+            <div className=' h-screen  flex items-center justifify-center' style={{
                 backgroundImage: `url("/photolink.jpg")`,
                 backgroundPosition: "center",
                 backgroundSize: "cover"

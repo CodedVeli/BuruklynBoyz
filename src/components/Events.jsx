@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ebl from '../assets/ebl.jpg'
 import event1 from '../assets/event1.jpg'
 import event2 from '../assets/event2.jpg'
@@ -7,7 +8,7 @@ import spotify from '../assets/spotify.jpg'
 
  
 
-const Events = () => {
+const Events = ({merchClick}) => {
 
     const events = [
         {
@@ -41,12 +42,15 @@ const Events = () => {
             price:'free'
         },
     ]
+    const handleEvent = () => {
+        merchClick()
+    }
 
 
     const renderevents =  events.map((event) => {
             return (
                 <div key={event.id}  className="relative">
-                    <img src={event.title} alt='event' className="w-[500px] rounded-2xl" />
+                    <img onClick={handleEvent} src={event.title} alt='event' className="w-[500px] rounded-2xl" />
                     <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center hover:bg-gradient-to-b from-black   via-transparent to-black  opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                 <button className=" text-blue-600 border-4 border-blue-500 font-semibold p-4 text-2xl">Grab Your Ticket</button>
             </div>
@@ -54,6 +58,7 @@ const Events = () => {
                 </div>
             )
         })
+       
     
 
     return (
