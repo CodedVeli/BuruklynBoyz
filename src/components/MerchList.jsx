@@ -73,7 +73,7 @@ const MerchList = ({merchClick}) => {
                 src={element.image_id}
                 alt={element.name}
             />
-            <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center hover:bg-gradient-to-b from-black   via-transparent to-black  opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+            <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center lg:hover:bg-gradient-to-b from-black   via-transparent to-black  opacity-0 transition duration-300 ease-in-out lg:hover:opacity-100">
                 <button onClick={handleMerch} className=" text-blue-600 border-4 border-blue-500 font-semibold p-4">Add to Cart</button>
             </div>
             <h1 className="text-white text-2xl font-bold">{element.name}</h1>
